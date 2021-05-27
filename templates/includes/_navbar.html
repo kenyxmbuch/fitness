@@ -3,8 +3,8 @@
       <div class="container"> 
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header page-scroll">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand page-scroll" href="/"><img src="./static/images/logo.png" width="100" height="50" alt="fitness" /></a> </div>
+          
+          <a class="navbar-brand page-scroll" href="/"><img src="../static/images/large.png" width="100" height="50" alt="fitness" /></a> </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 <style>
@@ -43,7 +43,35 @@ ul li ul li {
 ul li ul li a{
 color: #ff00ff;
 }
-		</style>
+
+.text{
+  margin-top: 100px;
+  text-align: center;
+}
+.text h1{
+  font-size: 80px;
+  color:  #ff00ff;
+  font-style: Comic Sans, Comic Sans MS, cursive;
+}
+.text p{
+  margin-top: 5px;
+  font-size: 25px;
+  font-style: Oldtown, fantasy;
+  color: #e5e4e2;
+}
+button{
+  width: 120px;
+  margin-top: 3px;
+  height: 40px;
+  background: #99c68e;
+}
+button a{
+  color: #c35817;
+  font-size: 20px;
+  text-transform: uppercase;
+
+}
+</style>
 		<ul class="nav navbar-nav" style="text-align: right;">
 		  {% if session.logged_in %}
             <li><a class="page-scroll" href="/">Home</a></li>
@@ -66,5 +94,12 @@ color: #ff00ff;
           </ul>
 		</div>
 	</div>
-	</nav>
+	</nav><br><br><br><br>
+  <div class="text">
+    <h1>Embrace Fitness</h1>
+    <p>Small steps each day makes you fit</p>
+    <button><a href="#">Get More</a></button>
+  </div>
+
+
 </div>
