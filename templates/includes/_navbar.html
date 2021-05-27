@@ -1,0 +1,70 @@
+<div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container"> 
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a class="navbar-brand page-scroll" href="/"><img src="./static/images/logo.png" width="100" height="50" alt="fitness" /></a> </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+<style>
+ul li{
+display: inline;
+border: 1px solid #ffdead;
+margin-right: 10px;
+}
+ul li a{
+font-size: 15px;
+}
+ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  right: 100px;
+  display: block;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+  display: inline-flex;
+  border: none;
+}
+
+ul li ul li a{
+color: #ff00ff;
+}
+		</style>
+		<ul class="nav navbar-nav" style="text-align: right;">
+		  {% if session.logged_in %}
+            <li><a class="page-scroll" href="/">Home</a></li>
+            <li><a class="page-scroll" href="#">Classes</a></li>
+            <li><a class="page-scroll" href="#">Reviews</a></li>
+			<li><a href="#">profile</a>
+				<ul class="dropdown">
+					<li><a href="#">comments</a></li>
+					<li><a href="settings">settings</a></li>
+				</ul>
+			</li>
+            <li class="page-scroll"><a href="/logout" class="nav-link"><span>Logout</span></a></li>
+			{% else %}
+			<li class="page-scroll"><a href="/" class="nav-link"><span>Home</span></a></li>
+			<li><a class="page-scroll" href="#">Classes</a></li>
+			<li><a class="page-scroll" href="#">Reviews</a></li>
+            <li><a class="page-scroll" href="/register">Register</a></li>
+            <li><a class="page-scroll" href="/login">Login</a></li>
+			{% endif %}
+          </ul>
+		</div>
+	</div>
+	</nav>
+</div>
