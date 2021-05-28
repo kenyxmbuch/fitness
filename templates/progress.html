@@ -1,0 +1,113 @@
+{% extends 'layout.html' %}
+<link rel="stylesheet" href="../static/css.table.css">
+{% block body %}
+<style type="text/css">
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+}
+ h2 small {
+    font-size: 0.7em;
+    color: #FF00FF;
+}
+
+ .table-row {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .table-header {
+    background-color: #95A5A6;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    display: flex;
+  }
+  .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+  .col-1 {
+    flex-basis: 10%;
+  }
+  .col-2 {
+    flex-basis: 40%;
+  }
+  .col-3 {
+    flex-basis: 25%;
+  }
+  .col-4 {
+    flex-basis: 25%;
+  }
+</style>
+<div class="container">
+   <div class="content">
+    <div class="container">
+   <h2>Users table</h2>
+ <ul class="responsive-table">
+  <li class="table-header">
+    <div class="col col-1">Name</div>
+    <div class="col col-2">Email</div>
+    <div class="col col-3">County</div>
+  </li>
+  <li class="table-row">
+    <div class="col col-1" data-label="Name">Admin</div>
+    <div class="col col-2" data-label="Email">admin@gmail.com</div>
+    <div class="col col-3" data-label="County">EMBU</div>
+  </li>
+    <li class="table-row">
+    <div class="col col-1" data-label="Name">User</div>
+    <div class="col col-2" data-label="Email">user@gmail.com</div>
+    <div class="col col-3" data-label="County">MERU</div>
+  </li>
+   </div><br/>
+
+   <div class="container">
+  <h2>BACHELOR OF SCIENCE IN COMPUTER SCIENCE:<small>Programmes</small></h2>
+  <ul class="responsive-table">
+    <li class="table-header">
+      <div class="col col-1">Unit Code</div>
+      <div class="col col-2">Unit Name</div>
+      <div class="col col-3">Hours</div>
+      <div class="col col-4">Status</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Unit Code">411</div>
+      <div class="col col-2" data-label="Unit Name">Network Security</div>
+      <div class="col col-3" data-label="Hours">60</div>
+      <div class="col col-4" data-label="Status">Approved</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Unit Code">412</div>
+      <div class="col col-2" data-label="Unit Name">Knowledge-Based System</div>
+      <div class="col col-3" data-label="Hours">60</div>
+      <div class="col col-4" data-label="Status">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Unit Code">414</div>
+      <div class="col col-2" data-label="Unit Name">ICT and Society</div>
+      <div class="col col-3" data-label="Hours">60</div>
+      <div class="col col-4" data-label="Status">Approved</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Unit Code">416</div>
+      <div class="col col-2" data-label="Unit Name">Final Year Project</div>
+      <div class="col col-3" data-label="Hours">60</div>
+      <div class="col col-4" data-label="Status">Approved</div>
+    </li>
+  </ul>
+</div>
+</div>
+</div>
+{% endblock%}

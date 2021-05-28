@@ -210,6 +210,14 @@ class UpdateRegisterForm(Form):
                              render_kw={'placeholder': 'Password'})
     mobile = StringField('Mobile', [validators.length(min=10, max=15)], render_kw={'placeholder': 'Mobile'})
  
+@app.route('/progress')
+def progress():
+    return render_template("progress.html")
+
+@app.route('/reviews')
+def reviews():
+    return render_template("reviews.html")
+
 @app.route('/settings', methods=['POST', 'GET'])
 @is_logged_in
 def settings():
