@@ -9,10 +9,10 @@
         <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 
 		<ul class="nav navbar-nav" style="text-align: right;">
-		  {% if current_user.is_authenticated %}
             <li><a class="page-scroll" href="/">Home</a></li>
             <li><a class="page-scroll" href="progress">Progress</a></li>
             <li><a class="page-scroll" href="#">Reviews</a></li>
+      {% if current_user.is_authenticated %}
 			<li><a href="#">More</a>
 				<ul class="sub-menu">
 					<li><a href="/profile">profile</a></li>
@@ -21,9 +21,6 @@
 			</li>
             <li class="page-scroll"><a href="/logout" class="nav-link"><span>Logout</span></a></li>
 			{% else %}
-			<li class="page-scroll"><a href="/" class="nav-link"><span>Home</span></a></li>
-			<li><a class="page-scroll" href="progress">Progress</a></li>
-			<li><a class="page-scroll" href="#">Reviews</a></li>
             <li><a class="page-scroll" href="/signup">Register</a></li>
             <li><a class="page-scroll" href="/login">Login</a></li>
 			{% endif %}
