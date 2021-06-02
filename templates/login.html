@@ -1,20 +1,17 @@
 {% extends 'layout.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
 
 {% block body %}
-{% include 'includes/_flashmsg.html' %}
-<div class="container">
-    <h2 style="text-align: center; color: #206aaa;">Login Form</h2>
-    {% from "includes/_formhelpers.html" import render_field %}
-    <div>
-        <form method="POST" action="">
-            <div class="form-group">
-                {{render_field(form.username, class_="form-control")}}
-            </div>
-            <div class="form-group">
-                {{render_field(form.password, class_="form-control")}}
-            </div>
-            <button type="submit" class="btn btn-primary">Login</button>
-        </form>
-    </div>
-</div>
+    <div class="container">
+
+      <form class="form-signin" method="POST" action="/login">
+        <h2 class="form-signin-heading">Please sign in</h2>
+        {{ form.hidden_tag() }}
+        {{ wtf.form_field(form.username) }}
+        {{ wtf.form_field(form.password) }}
+        {{ wtf.form_field(form.remember) }}
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+
+    </div> <!-- /container -->
 {% endblock %}

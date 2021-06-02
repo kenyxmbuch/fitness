@@ -1,0 +1,64 @@
+ul li{
+display: inline;
+border: 1px solid #ffdead;
+margin-right: 10px;
+}
+ul li a{
+font-size: 15px;
+}
+.sub-menu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  right: 0px;
+  display: block;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.sub-menu li {
+  clear: both;
+  width: 100%;
+  display: inline-flex;
+  border: 0.5 solid;
+}
+
+ul li ul li a{
+color: #dfff00;
+}
+
+.text{
+  margin-top: 100px;
+  text-align: center;
+}
+.text h1{
+  font-size: 80px;
+  color:  #ff00ff;
+  font-style: Comic Sans, Comic Sans MS, cursive;
+}
+.text p{
+  margin-top: 5px;
+  font-size: 25px;
+  font-style: Oldtown, fantasy;
+  color: #e5e4e2;
+}
+button{
+  width: 120px;
+  margin-top: 3px;
+  height: 40px;
+  background: #99c68e;
+  border-radius: 25px;
+}
+button a{
+  color: #c35817;
+  font-size: 18px;
+  text-transform: uppercase;
+
+}
