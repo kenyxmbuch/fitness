@@ -1,6 +1,7 @@
 .footer{
 	width: 100%;
 	background: chocolate;
+  margin-top: -20px;
 }
 /* Create three equal columns that floats next to each other */
 .column {

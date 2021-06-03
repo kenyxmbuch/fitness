@@ -17,16 +17,17 @@
 <link rel="stylesheet" href="{{url_for('.static', filename='css/table.css')}}">
 <link rel="stylesheet" href="{{url_for('.static', filename='css/_navbar.css')}}">
 <link rel="stylesheet" href="{{url_for('.static', filename='css/_footer.css')}}">
-<link rel="stylesheet" href="{{url_for('.static', filename='profile.css')}}">
+<link rel="stylesheet" href="{{url_for('.static', filename='css/profile.css')}}">
+<link rel="stylesheet" href="{{url_for('.static', filename='css/top.css')}}">
 
 </head>
 <body>
-<div class="wrapper" style="border: 2px solidmgreen; width: 98%;">
-<section id="banner" style="background-image: url(../static/images/fit.png); height: 500px;">
+<div class="wrapper" style="border: 2px solid green; width: 100%;">
+<section id="banner" style="background-image: url(../static/images/fit.jpg); height: 500px;">
 {% include 'includes/_navbar.html' %}
 </section>
   
-  <div class="container" style="width:100%;">
+  <div class="container" style="width:115%; margin-left: 100px; margin-top: -20px; margin-bottom:-20px;">
             {% block body %}
             <!-- Main Section -->
             {% endblock %}
@@ -34,14 +35,12 @@
   </div>
 		
 	{% include 'includes/_footer.html' %}
-
+    <a class="top-link hide" href="" id="js-top">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+        <span class="screen-reader-text">Back to top</span>
+    </a> 
   </div>
   <!-- Wrapper-->
-  <!-- Scroll To Top --> 
-  
-  <a id="back-top" class="back-to-top page-scroll" href="#"> <i class="ion-ios-arrow-thin-up"></i> </a> 
-  
-  <!-- Scroll To Top Ends--> 
    
 
 <!-- Jquery and Js Plugins --> 
@@ -50,6 +49,7 @@
 <script type="text/javascript" src="{{ url_for ('.static', filename='js/plugins.js') }}"></script> 
 <script type="text/javascript" src="{{ url_for ('.static', filename='js/menu.js') }}"></script>
 <script type="text/javascript" src="{{ url_for ('.static', filename='js/custom.js') }}"></script> 
-<script type="text/javascript" src="{{ url_for ('.static', filename='js/jquery.subscribe.js') }}"></script> 
+<script type="text/javascript" src="{{ url_for ('.static', filename='js/jquery.subscribe.js') }}"></script>
+<script type="text/javascript" src="{{ url_for ('.static', filename='js/top.js') }}"></script> 
 </body>
 </html>
