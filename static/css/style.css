@@ -2058,7 +2058,7 @@ font-size: 12px;
 	}
 	.container{
 		width: 100%;
-		margin-left: 0px;
+		margin-left: -100px;
 	}
 
 	.hero-section {
@@ -2194,7 +2194,7 @@ padding: 70px 10px 50px 350px;
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
 	.container{
 		width: 100%;
-		margin-left: 0px;
+		margin-left: -100px;
 	}
 	.features .features-list {
 		padding: 80px 0 0 0;
@@ -2216,7 +2216,7 @@ padding: 70px 10px 50px 350px;
  }
  	.container{
 		width: 100%;
-		margin-left: 0px;
+		margin-left: -100px;
 	}
 
  .subscribe-form .submit-button {
@@ -2230,7 +2230,7 @@ padding: 70px 10px 50px 350px;
 @media screen and (max-width: 399px) {
 	.container{
 		width: 100%;
-		margin-left: 0px;
+		margin-left: -100px;
 	}
 	.cta-sub {
 		text-align: center;
@@ -2282,7 +2282,7 @@ padding: 70px 10px 50px 350px;
  @media only screen and (min-width: 991px) and (max-width: 1201px) {
 	.container{
 		width: 100%;
-		margin-left: 0px;
+		margin-left: -100px;
 	}
 	 .app-features .features-left, .app-features .features-right {
 	 	padding: 0 0 0 0;
