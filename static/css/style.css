@@ -2188,6 +2188,9 @@ padding: 70px 10px 50px 350px;
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
+	.wrapper{
+		width: 100%;
+	}
 	.features .features-list {
 		padding: 80px 0 0 0;
 	}
@@ -2206,6 +2209,9 @@ padding: 70px 10px 50px 350px;
    padding: 0 30px 0 20px;
    border-radius: 5px 0 0 5px;
  }
+ 	.wrapper{
+		width: 100%;
+	}
 
  .subscribe-form .submit-button {
    padding: 0 5px 0 5px;
@@ -2216,7 +2222,9 @@ padding: 70px 10px 50px 350px;
 
 
 @media screen and (max-width: 399px) {
-
+	.wrapper{
+		width: 100%;
+	}
 	.cta-sub {
 		text-align: center;
 	}
@@ -2265,7 +2273,9 @@ padding: 70px 10px 50px 350px;
  }
 
  @media only screen and (min-width: 991px) and (max-width: 1201px) {
-
+	.wrapper{
+		width: 100%;
+	}
 	 .app-features .features-left, .app-features .features-right {
 	 	padding: 0 0 0 0;
 	 }
