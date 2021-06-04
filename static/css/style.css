@@ -413,12 +413,6 @@ p {
 --------------------------------------------------------*/
 
 
-#main {
-  height: 100%;
-  width: 100%;
-}
-
-
 /* ----- Hero Section Styling Starts ----- */
 
 .hero-section {
@@ -2056,7 +2050,7 @@ font-size: 12px;
 	  top: 20px;
 	  left: 20px;
 	}
-	.footer, nav{
+	.main{
 		width: 100%;
 	}
 
@@ -2191,7 +2185,7 @@ padding: 70px 10px 50px 350px;
 }
 
 @media only screen and (min-width: 767px) and (max-width: 1024px) {
-	.footer, nav{
+	.main{
 		width: 100%;
 	}
 	.features .features-list {
@@ -2212,7 +2206,7 @@ padding: 70px 10px 50px 350px;
    padding: 0 30px 0 20px;
    border-radius: 5px 0 0 5px;
  }
- 	.footer, nav{
+ 	.main{
 		width: 100%;
 	}
 
@@ -2225,7 +2219,7 @@ padding: 70px 10px 50px 350px;
 
 
 @media screen and (max-width: 399px) {
-	.footer, nav{
+	.main{
 		width: 100%;
 	}
 	.cta-sub {
@@ -2276,7 +2270,7 @@ padding: 70px 10px 50px 350px;
  }
 
  @media only screen and (min-width: 991px) and (max-width: 1201px) {
-	.footer, nav{
+	.main{
 		width: 100%;
 	}
 	 .app-features .features-left, .app-features .features-right {

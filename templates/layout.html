@@ -19,6 +19,8 @@
 <link rel="stylesheet" href="{{url_for('.static', filename='css/_footer.css')}}">
 <link rel="stylesheet" href="{{url_for('.static', filename='css/profile.css')}}">
 <link rel="stylesheet" href="{{url_for('.static', filename='css/top.css')}}">
+<link rel="stylesheet" href="{{url_for('.static', filename='css/index.css')}}">
+<link rel="stylesheet" href="{{url_for('.static', filename='css/layout.css')}}">
 
 </head>
 <body>
@@ -26,10 +28,9 @@
 <section id="banner" style="background-image: url(../static/images/fit.jpg); height: 500px;">
 {% include 'includes/_navbar.html' %}
 </section>
-  
-  <div class="container" style="width:115%; margin-left: 100px; margin-top: -20px; margin-bottom:-20px;">
+  <div class="context">
             {% block body %}
-            <!-- Main Section -->
+            <div class="container">.....</div>
             {% endblock %}
 
   </div>
