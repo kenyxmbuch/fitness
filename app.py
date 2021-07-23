@@ -17,6 +17,14 @@ login_manager = LoginManager()
 login_manager.init_app(app)
 login_manager.login_view = 'login'
 
+headings = ("Week", "workout-time", "Status", "progress")
+
+data = (
+    ("1", "1 hour", "Light-intensity", "fit"),
+    ("2", "1 hour", "Light-intensity", "fit"),
+    ("3", "1 hour", "Medium-intensity", "fitter")
+)
+
 class User(UserMixin, db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(15), unique=True)
@@ -79,7 +87,7 @@ def signup():
 @app.route('/profile')
 @login_required
 def profile():
-    return render_template('profile.html', name=current_user.username)
+    return render_template('profile.html', name=current_user.username, headings=headings, data=data)
 
 @app.route('/logout')
 @login_required
