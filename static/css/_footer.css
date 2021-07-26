@@ -17,7 +17,7 @@
   display: table;
   clear: both;
 }
-.column h1{
+.column h1, .column h1 a{
 text-align: center;
 font-size: 25px;
 color: #ff00ff;

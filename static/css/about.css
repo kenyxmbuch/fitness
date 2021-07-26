@@ -1,0 +1,28 @@
+/*-----------------------------------------------------------------*/
+/* About
+/*-----------------------------------------------------------------*/
+
+.features-icon-box {
+	margin-bottom:50px;
+}
+
+.features-icon-box .features-icon {
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	line-height: 41px;
+	font-size: 45px;
+	color:#7EC13F;
+}
+
+.features-icon-box .features-info {
+	margin-left: 80px;
+}
+.section {
+	padding:100px 0 70px;
+	position:relative;
+}
+
+.section .container {
+	position:relative;
+}

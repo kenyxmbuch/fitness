@@ -1,0 +1,96 @@
+{% extends 'layout.html' %}
+{% block body %}
+<div class="container" style="width: 100%; margin-top: 20px;">
+	<style>
+		#Contact {
+	background:url(../static/images/parallax/contact.jpg) no-repeat;
+	width: 100%;
+}
+
+.contact-form {
+	display: block;
+	padding: 0px 0px 30px 0px;
+}
+
+.contact-info {
+	margin-bottom:65px;
+}
+
+.contact-info p {
+    font-size: 17px;
+    line-height: 13px;
+    margin-bottom: 16px;
+    color: #FFF;
+}
+.overlay {
+	background:rgba(0, 0, 0, 0.4) url("../static/images/pattern.png") repeat;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+section {
+	position:relative;
+}
+
+.parallax .container {
+	position:relative;
+}
+
+.parallax {
+	background-attachment: fixed !important;
+	background-position: center center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+}
+	</style>
+	   <!--Start Contact-->
+   <section id="Contact" class="section parallax">
+      <div class="overlay"></div>
+       <div class="container">
+           <div class="row">
+           
+                 <div class="title-box text-center white">
+                    <h2 class="title">Contact</h2>
+                 </div>
+             </div>
+
+               <!--Start contact form-->
+               <div class="col-md-8 col-md-offset-2 contact-form">
+               
+                    <div class="contact-info text-center">
+                       <p>0797 070 464</p>
+                       <p>123 Kamunyaka, 4th floor, Murang'a </p>
+                       <p>kenyxndush@gmail.com </p>
+                    </div>
+                     
+                     <form method="post">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <input class="form-control" id="name" placeholder="Full Name" type="text">
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" id="email" placeholder="Your Email" type="email">
+                            </div>
+                            <div class="col-md-4">
+                                <input class="form-control" id="subject" placeholder="Subject" type="text">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control" id="message" rows="7" placeholder="Your Message"></textarea>
+                            </div>
+                            <div class="col-md-12 text-right">
+                                <button type="submit" class="btn btn-green">SEND MESSAGE</button>
+                            </div>
+                        </div>
+                    </form>
+               </div>
+              <!--End contact form-->
+              
+       </div> <!-- /.container-->
+   </section>
+   <!--End Contact-->
+</div><br>
+{% endblock %}
